@@ -15,13 +15,14 @@ function taskUpdate(btn){
             document.getElementById('mainCheck').innerText = valmainCheck + 1;
 
 
+    
     let div = document.createElement('div');
     div.innerHTML = `
-    <p id="his" class="text-xl text-black text-center p-4 mt-4 bg-slate-200 rounded-lg">task is added</p>
+    <p id="his" class="text-xl text-black text-center p-4 mt-4 bg-slate-200 rounded-lg"></p>
     `
     document.getElementById('activity').appendChild(div);
 
-document.getElementById('btnHistory').addEventListener('click', function(){
+    document.getElementById('btnHistory').addEventListener('click', function(){
     document.getElementById('activity').removeChild(div);
    
 })
@@ -36,8 +37,9 @@ document.getElementById('btnHistory').addEventListener('click', function(){
         }
     })
     
-    
+   
    
 }
+
 
 
