@@ -1,4 +1,4 @@
-function taskUpdate(btn){
+function taskUpdate(btn, his){
 
     document.getElementById(btn).addEventListener('click', function(){
 
@@ -15,10 +15,12 @@ function taskUpdate(btn){
             document.getElementById('mainCheck').innerText = valmainCheck + 1;
 
 
+            let realTime = new Date().toLocaleTimeString();
+    
     
     let div = document.createElement('div');
     div.innerHTML = `
-    <p id="his" class="text-xl text-black text-center p-4 mt-4 bg-slate-200 rounded-lg"></p>
+    <p id="${his}" class="w-11/12 text-md text-black text-center p-2 mt-4 bg-slate-200 rounded-lg mx-auto">You have Complete ${his} <br> at ${realTime}</p>
     `
     document.getElementById('activity').appendChild(div);
 
@@ -33,7 +35,7 @@ function taskUpdate(btn){
     
         }
         if(document.getElementById('taskId').innerText < 1){
-            alert('sesh vai seshh')
+            alert('congratulations! you added all the task')
         }
     })
     
