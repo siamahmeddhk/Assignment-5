@@ -1,3 +1,6 @@
+
+// funtion for card and history sections work
+
 function taskUpdate(btn, his){
 
     document.getElementById(btn).addEventListener('click', function(){
@@ -20,7 +23,7 @@ function taskUpdate(btn, his){
     
     let div = document.createElement('div');
     div.innerHTML = `
-    <p id="${his}" class="w-11/12 text-md text-black text-center p-2 mt-4 bg-slate-200 rounded-lg mx-auto">You have Complete ${his} <br> at ${realTime}</p>
+    <p id="${his}" class="w-11/12 text-sm text-black text-center p-2 mt-4 bg-slate-200 rounded-lg mx-auto">You have Complete The Task ${his} <br> at ${realTime}</p>
     `
     document.getElementById('activity').appendChild(div);
 
