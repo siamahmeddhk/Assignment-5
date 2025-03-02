@@ -3,7 +3,7 @@ function taskUpdate(btn, his){
     document.getElementById(btn).addEventListener('click', function(){
 
         
-        if(!alert('board updated successfully') === true){
+    if(!alert('Board Updated Successfully') === true){
     
     
             let taskId = document.getElementById('taskId').innerText;
@@ -15,7 +15,7 @@ function taskUpdate(btn, his){
             document.getElementById('mainCheck').innerText = valmainCheck + 1;
 
 
-            let realTime = new Date().toLocaleTimeString();
+    let realTime = new Date().toLocaleTimeString();
     
     
     let div = document.createElement('div');
